@@ -6,7 +6,7 @@ import time
 def common_guess(word: str) -> str | None:
     """Checks a file filled with common words"""
 
-    with open('words.text', 'r') as words:
+    with open('words.txt', 'r') as words:
         word_list: list[str] = words.read().splitlines()
 
     for i, match in enumerate(word_list, start=1):
